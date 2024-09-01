@@ -1,0 +1,25 @@
+-> What are Rollups ?
+   Rollups process transactions on another, faster blockchain (known as a layer 2), then port the transaction data back to the parent blockchain.
+
+-> Types of Rollups?
+1. ZKRollups: ZK Rollups are layer 2 scaling solution. It does computation and state management off chain and only stores transaction data on layer 1 chain like Ethereum.
+  They processes multiple transactions in batches and then post some minimal summary data on mainnet. 
+  They also produce validity proofs to prove the correctness of their changes.
+  States are maintain in zk rollup using smart contracts, to validate the state, they have to generate validity proof. This means that ZK-rollups only need to provide validity proofs
+  to finalize transactions on Ethereum instead of posting all transaction data on-chain like optimistic rollups.
+  There is no delay in moving funds from zk rollups because exit transactions are executed once the ZK-rollups contract verifies the validity proof.
+  But there is a delay in Optimistic rollups where anyone is allowed to challenge the exit transaction with fraud proof.
+  ZK-rollups write transactions to Ethereum as calldata. calldata is where data that is included in external calls to smart contract functions gets 
+  stored. Information in calldata is published on the blockchain, allowing anyone to reconstruct the rollup’s state independently. ZK-rollups use 
+  compression techniques to reduce transaction data—for example, accounts are represented by an index rather than an address, which saves 28 bytes
+  of data. On-chain data publication is a significant cost for rollups, so data compression can reduce fees for users.
+
+2. Optimistic rollups : Since optimistic rollups don’t operate with validity proofs, they employ a different approach whereby transactions are assumed
+  to be valid until their correctness is challenged. After an optimistic rollup batch is submitted on the base layer, there’s a time window called a 
+  challenge period during which anyone can challenge the outcome of a rollup transaction by computing a fraud proof. If the fraud proof succeeds, 
+  the rollup protocol executes the transaction again and updates the rollup’s state. If optimistic rollup state transitions aren’t challenged by the
+  time the challenge period elapses, the batch of transactions is deemed valid and accepted on the layer 1.
+
+References:
+https://ethereum.org/en/developers/docs/scaling/zk-rollups/
+https://chain.link/education-hub/zero-knowledge-rollup

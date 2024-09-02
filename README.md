@@ -1,3 +1,5 @@
 # All_About_Blockchain
 
-Let's start from scratch to pro in blockchain. 
+This repository will includes some of the important topics of Blockchain. 
+
+Next will be cryptography :) 

@@ -1,0 +1,17 @@
+- Most implementations of ZK technology do not provide privacy.
+
+One way to connect a L2 blockchain to a L1 blockchain is to make it a ZK rollup. In a ZK rollup, a service called a sequencer gathers transactions from
+the L2 and generates a proof of these transactions, with a prover program. This proof is then sent to an on-chain verifier program in L1. Once the L1 verifier verifies the proof, the underlying transactions are considered finalized on the L2.
+
+In theory, if the L2 explodes some day, all of the assets of the L2 can be rescued on the L1 because of the transaction updates being sent to the L1.
+This is how L2 “inherits” L1 security.
+
+1. the proof leaks data about the original transactions.
+Adding ZK privacy to the proving system would make the proofs private. But ZK proofs are not used in a vacuum — they are a small(?) part of some bigger
+system, like a ZK rollup. One also has to consider the architecture around the proofs.
+
+2. All transactions in L2 are first sent to the sequencer, which generates a proof for them. Since the sequencer (or a prover associated to the sequencer)
+is generating the proofs, it requires all of the transaction inputs — including private ones.
+Therefore, the user needs to send their private data to the sequencer and trust that the sequencer is honest. This already defeats the purpose of ZK 
+privacy: the data doesn’t stay private.
+

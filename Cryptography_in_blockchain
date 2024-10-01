@@ -1,0 +1,63 @@
+Role of Cryptography in Blockchain
+The method used to secure data from unauthorised access is called cryptography. Blockchain was built on the concept of enabling secure communication between two parties therefore, it uses cryptography to secure the transactions that take place between two nodes on the network. Blockchain uses two main concepts, cryptography and hashing. The former is used to encrypt messages in a peer-to-peer network, and the latter is used to secure information on the block and link the blocks in a blockchain. 
+
+Maintaining the security of participants and transactions as well as safeguarding against double-spending, is the primary focus of cryptography. It makes sure that the transactions on the blockchain network are secure by ensuring data can be obtained, read and processed only by individuals for whom it was intended. 
+
+Definition of Cryptography
+Cryptography is the process of developing a set of techniques and protocols to prevent any third party from gaining access to the data during a communication process. The word ‘cryptography’ is derived from two Greek terms, ‘Kryptos’ meaning ‘hidden’ and ‘Graphein’ meaning ‘to write’. Some terminologies used in cryptography: 
+
+Encryption
+It is the process of conversion of normal text (plaintext) to a random sequence of bits (ciphertext).
+
+Decryption
+It is the inverse process of encryption as it involves the conversion of ciphertext to plain text.
+
+Cipher
+It is a mathematical function, also known as a cryptographic algorithm, used to convert plaintext to cipher text.
+
+Key
+It is the small amount of information required to induce an output from the cryptographic algorithm. 
+
+Types of Cryptography
+To better understand cryptography in blockchain, it is important to dive deeper into the different types of cryptography. There mainly two ways in which cryptographic algorithms can be performed: 
+
+Symmetric-key cryptography
+This method of encryption was the first to be used online. It uses a single key for both the encryption and decryption process. Due to the process being so straightforward, large amounts of data can be processed very quickly. However, problems arise in terms of security as a common single key is used between the sender and receiver. It is also known as Secret-Key Cryptography. To encrypt the data, the algorithm uses the key in a cipher and the data must be accessed. Data can be decrypted by the person entrusted with the secret key. A well-known symmetric-key cryptography system is Data Encryption System (DES).
+
+
+Asymmetric-key cryptography
+This method of cryptography uses different keys for the process of encryption and decryption. The pair of keys involved is the public key which is unique to you but can be seen by everyone else (e.g. email id), and the private key, which is known only by you. The public key is used to encrypt data, and the private key is used to decrypt data. 
+
+It is also known as Public-Key Cryptography. In order to perform an exchange in this cryptography, the sender can send information to your public key which can then be unlocked using the private key. Asymmetric cryptography is used when there is a constantly expanding environment and data is to be exchanged between several parties. The use of digital signatures is an example of asymmetric-key cryptography. 
+
+
+Use of Cryptographic Hashing in the Blockchain
+Another crucial factor that makes the blockchain secure and immutable is Hashing. Cryptographic hashing is a process that involves coding the data or information on the blockchain into an unreadable, unchangeable and unhackable text. 
+
+This method of encryption does not make use of keys but instead uses a cipher to form a hash value of a fixed length from the plaintext. Using a hash algorithm, any plaintext information can be turned into a unique string of text. No matter the length of the input value, the hash always has a fixed length. This process once completed cannot be reversed. Any minor change in the input will result in a different output. This makes threat detection very easy and quick, thus increasing its security. 
+
+
+Benefits of cryptography in blockchain
+Reliability
+When using cryptographic hashing, transactions are irreversible and thus immutable. This ensures data stored on the blockchain (digital ledger) is reliable, as this process keeps it safe from attackers.
+
+Security
+Cryptography is key to keeping the blockchain ledger secure. Every transaction recorded on the blockchain is encrypted, and users can access their data using their private or public keys. Cryptographic hashing makes tampering with data impossible, therefore enhancing its security. 
+
+Scalability
+The cryptographic hash function allows limitless transactions to be recorded securely on the blockchain network. As several transactions can be combined into one hash, scaling of blockchains is made possible.
+
+Drawbacks of cryptography in blockchain
+Information is difficult to access 
+Heavily encrypted data and digitally signed information make it difficult to access at the most critical times, even for a legitimate user. Any intruder can attack and disable the network. 
+
+Expensive
+A huge amount of time and money is required for cryptography. Public key encryption involves the setting up and maintenance of its infrastructure for which huge amounts of investment are required. Additionally, adding cryptographic techniques to send and process information delays the process. 
+
+Vulnerability
+The level of difficulty and complexity of the mathematical problem used in cryptographic techniques determine the level of security. The less complex the problem, the more vulnerable the cryptographic technique is. 
+
+Conclusion
+Cryptography is the foundation of blockchain technology. It provides the tools needed to encrypt data, record transactions, and send cryptocurrency securely, all without a centralised authority. It ensures all the blocks get added to the chain without any limit. Hashing in cryptography allows huge amounts of transactions to be stored on the network while protecting them from hackers. Transactions are made safe, reliable and scalable with the help of cryptography. 
+
+These benefits of cryptography in blockchain have led a large number of multinationals and emerging startups to adopt this technology over the past few years. It is important to keep up with ongoing blockchain projects to better understand its uses and applications in the real world.

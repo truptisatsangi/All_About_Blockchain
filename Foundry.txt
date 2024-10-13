@@ -1,0 +1,2 @@
+-> Foundry code is written in solidity.
+-> It has fuzzing logic, which allows to test on random values if taken them in the parameter.
